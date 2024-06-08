@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-smooth: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  background-color: rgb(70, 70, 70);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+}
+
+.image {
+  background-image: url("./images/background.png");
+  height: 100%;
+  width: 60%;
+  background-size: cover;
+  background-position: 40% center;
+}
+
+form {
+  background-color: #fa8e66;
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 0px 50px 0px 50px;
+}
+
+h1 {
+  font-size: 50px;
+  margin-left: -3px;
+}
+
+label {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.name-username {
+  display: flex;
+  gap: 10px;
+}
+
+.input-area {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  border: 1px solid black;
+  outline: none;
+  background-color: #fa8e66;
+  padding: 8px 10px 8px 10px;
+  font-size: 19px;
+}
+
+.password-confirm-password {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="password"]::-ms-reveal {
+  display: none;
+}
+
+.terms {
+  display: flex;
+  gap: 10px;
+}
+
+#checkbox-terms {
+  width: 30px;
+}
+
+button {
+  background-color: #fa8e66;
+  border: 1px solid black;
+  padding: 20px 0px 20px 0px;
+  font-size: 25px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.login {
+  text-align: center;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+
+@media (max-width: 1280px) {
+  .image {
+    width: 40%;
+  }
+
+  form {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .image {
+    display: none;
+  }
+
+  form {
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+}
